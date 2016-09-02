@@ -25,7 +25,7 @@ for (var i = 0; i < elementos.length; i++) {
 
         if (node2.nodeType === 3) {
             var texto2 = node2.nodeValue;
-            var textoTroca2 = texto2.replace(/Real/g, 'GOLPE');
+            var textoTroca2 = texto2.replace(/Real/gi, 'GOLPE');
 
             if (textoTroca2 !== texto2) {
                 elemento2.replaceChild(document.createTextNode(textoTroca2), node2);
